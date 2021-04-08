@@ -11,8 +11,8 @@
 
 
 		<property name="show_sql">true</property>
-		<mapping class="com.xworkz.customer.entity.CustomerEntity"></mapping>
-
+		<mapping class="com.xworkz.hotelvendor.entity.VendorEntity"></mapping>
+		
 
 	</session-factory>
 </hibernate-configuration>
