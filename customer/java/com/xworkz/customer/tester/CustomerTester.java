@@ -10,15 +10,15 @@ public class CustomerTester {
 
 	public static void main(String[] args) {
 		
-		CustomerEntity entity = new CustomerEntity("Rajappa", "Bangalore", 98765432, 9);
-		CustomerEntity entity1 = new CustomerEntity("Arun", "Mangalore", 98765431, 9);
+		//CustomerEntity entity = new CustomerEntity(1,"Rajappa", "Bangalore", 98765432, 9);
+		CustomerEntity entity1 = new CustomerEntity(2,"Arun", "Mangalore", 98765431, 9);
 		
 		CustomerRepo repository = new CustomerRepoImpl();
-		repository.save(entity);
+		//repository.save(entity);
 	
 
 		CustomerService service = new CustomerServiceImpl(repository);
-		service.ValidAndSave(entity);
+		//service.ValidAndSave(entity);
 		service.ValidAndSave(entity1);
 		
 	}
